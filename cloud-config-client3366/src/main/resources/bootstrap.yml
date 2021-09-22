@@ -1,5 +1,5 @@
 server:
-  port: 3355
+  port: 3366
 
 spring:
   #配置RabbitMQ服务器地址和用户名密码
@@ -22,7 +22,7 @@ spring:
 eureka:
   # 设置控制台显示的服务路径
   instance:
-    instance-id: configClient3355
+    instance-id: configClient3366
     prefer-ip-address: true # 访问地址可以显示ip
     # Eureka客户端向服务端发送心跳的时间间隔，单位为秒（默认是30秒）
     lease-renewal-interval-in-seconds: 30

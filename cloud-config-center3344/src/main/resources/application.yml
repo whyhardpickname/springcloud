@@ -1,6 +1,13 @@
 server:
   port: 3344
 spring:
+    #配置RabbitMQ服务器地址和用户名密码
+  rabbitmq:
+    host: 110.42.214.187
+    #RabbitMQ默认的JMS服务端口
+    port: 5672
+    username: guest
+    password: guest
   application:
     name: cloud-config-center  # 注册进eureka服务器的微服务名
   cloud:
@@ -37,3 +44,9 @@ eureka:
       #defaultZone: http://localhost:7001/eureka  # 单机版
       defaultZone: http://110.42.214.187:7001/eureka,http://110.42.214.187:7002/eureka # 集群版
 
+#actuator配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
