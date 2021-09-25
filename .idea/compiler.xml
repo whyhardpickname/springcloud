@@ -24,7 +24,10 @@
         <module name="cloud-consumerzk-order80" />
         <module name="cloud-consumerconsul-order80" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloudalibaba-provider-payment9002" />
+        <module name="cloudalibaba-provider-payment9001" />
         <module name="cloud-gateway-gateway9527" />
+        <module name="cloudalibaba-consumer-nacos-order83" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-provider-hystrix-payment8001" />
         <module name="cloud-consumer-feign-order80" />
